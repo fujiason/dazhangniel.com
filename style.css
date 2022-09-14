@@ -132,7 +132,7 @@ header ul li a:hover{
   justify-content: center;
 }
 .daniel{
-    max-width: 500px;
+    max-height: 500px;
 }
 .works a{
   list-style: none;
@@ -194,4 +194,7 @@ header ul li a:hover{
 .filmImages:hover .filmName{
   opacity: 1;
   transition: 0.3s;
+}
+.contentText iframe{
+  margin: 20px 0px;
 }
