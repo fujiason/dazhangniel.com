@@ -7,25 +7,28 @@
     font-family: 'Prompt', sans-serif;
 }
 body{
+    -webkit-animation: fadein 3s;
+    background-color: black;
     margin: 0;
 }
-.div1, .div2, .div3, .div4, .div5, .div6, .div7{
+@-webkit-keyframes fadein{
+    from{opacity: 0;}
+    to{opacity:1;}
+}
+.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8{
     height: 100vh;
 }
 .div1{
     display: flex;
     justify-content: center;
     overflow: hidden;
-    background-image: url('./photos/InTheHeights.JPEG');
-    background-size: cover;
-    background-attachment: cover;
 }
 .div1 video{
     position: relative;
     z-index: 0;
     max-height: 100vh;
 }
-.div3, .div4, .div5{
+.div3, .div4, .div5, .div8{
     display: flex;
     position: relative;
     justify-content: center;
@@ -36,7 +39,7 @@ body{
     text-align: left;
 }
 .div3 div h1{
-    margin-top: 40px;
+    margin-top: 70px;
     transform: translateX(-35%);
     color: white;
 }
@@ -201,15 +204,6 @@ body{
     left: 0;
     width: 100%;
 }
-.div2{
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    background-image: url('./photos/FashionShow.PNG');
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 .content{
     background-color: black;
     position: auto;
@@ -227,18 +221,37 @@ body{
   max-width: 600px;
 }
 .contentText h2{
-    padding-top: 100px;
+  max-width: 600px;
   font-size: 3em;
   line-height: 1.4em;
   font-weight: 500;
 }
 .contentText h3{
+    max-width: 600px;
   color: #CCCCCC;
   font-weight: 500;
   max-width: 40em;
   margin-top: 10px;
 }
+.filmRow{
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    justify-content: center;
+    background-color: black;
+    background-size: cover;
+    background-attachment: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
 .filmImages{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+    vertical-align: middle;
     position: relative;
     text-align: center;
     margin: 20px 0px;
@@ -247,7 +260,7 @@ body{
 .filmName{
     position: absolute;
     bottom: 8px;
-    left: 16px;
+    left: 0px;
     display: inline-block;
     font-size: 1.4rem;
     color: white;
@@ -257,7 +270,7 @@ body{
     opacity: 0;
 }
 .filmImages a img{
-    max-width: 500px;
+    max-width: 400px;
 }
 .filmImages:hover .filmName{
   opacity: 1;
@@ -267,19 +280,56 @@ body{
   margin: 20px 0px;
 }
 
+.div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('./photos/daniel_1.JPG');
+    top: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100% 20%;
+}
 .skills{
-    position: flex;
     top: 0%;
-    left: 0;
+    position: flex;
+    height: 100vh;
     width: 100%;
     text-align: center;
     z-index: 1;
-    left: 50%;
-    transform: translateY(-50%);
 }
-.skills_content{
-    color: black;
-    font-weight: 600;
-    font-size: 5rem;
+.skill_content h1{
+    color: white;
+    font-weight: 400;
+    font-size: 6rem;
     text-decoration: none;
+}
+#video-compare-container {
+    align-items: center;
+    display: inline-block;
+    line-height: 0;
+    position: relative;
+    width: 95%;
+    height: 95%;
+    padding-top: 42.3%;
+    z-index: 0;
+}
+#video-compare-container > img {
+    width: 100%;
+    position: absolute;
+    top: 0; 
+    height: 100%;
+}
+#video-clipper {
+    width: 50%; 
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    overflow: hidden;
+}
+#video-clipper img {
+    width: 200%;
+    position: absolute;
+    height: 100%;
 }

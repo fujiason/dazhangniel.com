@@ -31,17 +31,15 @@
             <h2>Director and Artist</h2>
         </div>
     </div>
+    
     <div class="div2">
-
         <div class="skills">
             <div class="skill_content"><h1>Director</h1></div>
             <div class="skill_content"><h1>Editor</h1></div>
             <div class="skill_content"><h1>Photography</h1></div>
             <div class="skill_content"><h1>Computer Science</h1></div>
         </div>
-
     </div>
-
 
     <div class="div3">
         <div>
@@ -70,10 +68,18 @@
             </p>
             <center>
                 <video autoplay muted loop>
-                    <source src="./movies/Daniel Teaser Clip 13 Qi Waterbending.mp4" type="video/mp4">
+                    <source src="./movies/Daniel Teaser Clip 11 Fire Hit.mp4" type="video/mp4">
                 </video>
             </center>
         </div>        
+    </div>
+    <div class="div8">
+        <div id="video-compare-container">
+            <img src="./vfx/Qi Waterbending VFX 2 Before.jpg">
+            <div id="video-clipper">
+                <img src="./vfx/Qi Waterbending VFX 2 After.jpg">
+            </div>
+        </div>
     </div>
     <div class="div5">
         <div>
@@ -119,29 +125,71 @@
         </center>
     </div>
 
+    <!-- <div class="socials">
+        <a href="#"><img src="./photos/instagram.png"></a>
+        <a href="#"><img src="./photos/youtube.png"></a>
+        <a href="#"><img src="./photos/tiktok.png"></a>
+    </div> -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
     <scripe src="main.js"></scripe>
     <script>
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to(".skills", {
-        y: 100, 
-        duration: 0, 
-        scrollTrigger: {
-            trigger: ".skills", 
-            start: "top 80%", 
-            end: "top 0%", 
-            scrub: 0, 
-            toggleActions: "restart none none none", 
-            pin: true, 
-            markers: {
-                startColor: "purple", 
-                endColor: "fuchsia", 
-                fontSize: "3rem",
-            },
-        } 
+    // gsap.to(".div1", {
+    //     duration: 8, 
+    //     scrollTrigger: {
+    //         trigger: ".div1", 
+    //         start: "top top", 
+    //         end: "-=1000", 
+    //         scrub: 4, 
+    //         pin: ".div2",
+    //         toggleActions: "restart none none none", 
+    //         markers: {
+    //             startColor: "purple", 
+    //             endColor: "fuchsia", 
+    //             fontSize: "2rem",
+    //         },
+    //     } 
+    // });
+
+    gsap.defaults({ease: "none", duration: 2});
+    
+    const tl = gsap.timeline();
+    tl.from(".skills", {yPercent: 100});
+
+    ScrollTrigger.create({
+        animation: tl, 
+        trigger: ".div2", 
+        start: ".div2", 
+        end: "+=2500", 
+        scrub: true, 
+        pin: true, 
+        anticipatePin: 1, 
+        // markers: {
+        //     startColor: "purple", 
+        //     endColor: "fuchsia", 
+        //     fontSize: "2rem",
+        // }
     });
+
+    function trackLocation(e) {
+        var rect = videoContainer.getBoundingClientRect(),
+            position = ((e.pageX - rect.left) / videoContainer.offsetWidth)*100;
+        if (position <= 100) { 
+            videoClipper.style.width = position+"%";
+            clippedVideo.style.width = ((100/position)*100)+"%";
+            clippedVideo.style.zIndex = 3;
+	    }
+    }
+    var videoContainer = document.getElementById("video-compare-container"),
+    videoClipper = document.getElementById("video-clipper"),
+    clippedVideo = videoClipper.getElementsByTagName("img")[0];
+    videoContainer.addEventListener( "mousemove", trackLocation, false); 
+    videoContainer.addEventListener("touchstart",trackLocation,false);
+    videoContainer.addEventListener("touchmove",trackLocation,false);
+
     </script>
 </body>
 </html>

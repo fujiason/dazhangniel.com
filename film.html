@@ -22,15 +22,25 @@
             <li><a href="#">Source</a></li>
         </ul>
     </div>
-    <div class="content">
+    <div class="content" style="padding-top: 100px;">
       <div class="contentText">
         <h2>Independent Films</h2>
         <h3><br>These are my best works that I have directed and edited myself. I hope that 
           these films reach out and inspire my audience. </h3>
+      </div>
+    </div>
+    <center>
+      <div class="filmRow">
         <div class="filmImages">
           <a href="heights.html"><img src="./photos/InTheHeights.jpeg"></a>
           <div class="filmName">
             <h3>In The Heights But It's Asian</h3>
+          </div>
+        </div>
+      <div class="filmImages">
+        <a href="wuxing.html"><img src="./photos/Wuxing.png"></a>
+          <div class="filmName">
+            <h3>Wuxing Warriors</h3>
           </div>
         </div>
         <div class="filmImages">
@@ -39,40 +49,38 @@
             <h3>Wuxing Warriors</h3>
           </div>
         </div>
-        <h2><hr><br>Trailers</h2>
+      </div>
+    </center>
+    <div class="content">
+      <div class="contentText">
+        <h2>Trailers</h2>
         <h3><br>These are trailers that I have directed for my independent films and organizations that I've been in. </h3>
+      </div>
+    </div>
+      <div class="filmRow">
         <div class="filmImages">
           <a href="fashion.html"><img src="./photos/FashionShow.png"></a>
           <div class="filmName">
             <h3>Fashion Show 2023</h3>
           </div>
         </div>
-        <br>
+        <div class="filmImages">
+          <a href="fashion.html"><img src="./photos/FashionShow.png"></a>
+          <div class="filmName">
+            <h3>Fashion Show 2023</h3>
+          </div>
+        </div>
+        <div class="filmImages">
+          <a href="fashion.html"><img src="./photos/FashionShow.png"></a>
+          <div class="filmName">
+            <h3>Fashion Show 2023</h3>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
     <scripe src="main.js"></scripe>
-    <script>
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.to(".skills", {
-        y: 100, 
-        duration: 0, 
-        scrollTrigger: {
-            trigger: ".skills", 
-            start: "top 80%", 
-            end: "top 0%", 
-            scrub: 0, 
-            toggleActions: "restart none none none", 
-            pin: true, 
-            markers: {
-                startColor: "purple", 
-                endColor: "fuchsia", 
-                fontSize: "3rem",
-            },
-        } 
-    });
-    </script>
 </body>
 </html>
