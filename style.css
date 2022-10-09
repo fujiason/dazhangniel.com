@@ -11,6 +11,9 @@ body{
     background-color: black;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 @-webkit-keyframes fadein{
     from{opacity: 0;}
     to{opacity:1;}
