@@ -235,8 +235,7 @@
 
     const sl = gsap.timeline();
     sl.to(".work_transition video", {scale: 2})
-    sl.from(".work_transition h1", {opacity:0})
-    sl.to(".work_transition h1", {opacity:0});
+    sl.from(".work_transition h1", {opacity:0});
 
     ScrollTrigger.create({
         animation: sl, 
@@ -255,8 +254,7 @@
 
     const vl = gsap.timeline();
     vl.to(".about_transition video", {scale: 2})
-    vl.from(".about_transition h1", {opacity:0})
-    vl.to(".about_transition h1", {opacity:0});
+    vl.from(".about_transition h1", {opacity:0});
 
     ScrollTrigger.create({
         animation: vl, 
