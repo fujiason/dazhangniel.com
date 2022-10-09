@@ -30,7 +30,6 @@
             <h1>Daniel Zhang</h1>
             <h2>Director and Artist</h2>
         </div>
-
         <div class="skills">
             <div class="skill_content"><h1>Director</h1></div>
             <div class="skill_content"><h1>Editor</h1></div>
@@ -39,6 +38,12 @@
         </div>
     </div>
     
+    <div class="work_transition">
+        <video autoplay muted loop>
+            <source src="./movies/Daniel Teaser Clip 14 Cultural Coords.mp4" type="video/mp4">
+        </video>
+        <h1>Films</h1>
+    </div>
     <!-- <div class="div2">
         <video id="v0" tabindex="0", autobuffer preload muted class="scrub_mov">
             <source src="./movies/Daniel Teaser Clip 18 Clash.mp4" type="video/mp4">
@@ -95,6 +100,21 @@
             </div>
         </div>
     </div>
+
+    <div style="
+    display: flex;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black;
+    background-size: cover;
+    background-attachment: cover;
+    text-align: center;">
+        <p style="color: #CCCCCC">
+            Before and After (Hover)
+        </p>
+    </div>
+
     <div class="div5">
         <div>
             <H1 class="film_title">
@@ -116,36 +136,57 @@
             </center>
         </div>        
     </div>
+
+    <div class="about_transition">
+        <video autoplay muted loop>
+            <source src="./movies/Daniel Teaser Clip 2 12 AM Phone Shot.mp4" type="video/mp4">
+        </video>
+        <h1>About</h1>
+    </div>
+
     <div class="div6">
-        <center>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
             <div>
                 <img src="./photos/STFB BTS.PNG">
             </div>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-        </center>
-    </div>
+        </div>
     <div class="div7">
-        <center>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
             <div>
                 <img src="./photos/FS Trailer BTS.JPG">
             </div>
-        </center>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
     </div>
 
-    <!-- <div class="socials">
-        <a href="#"><img src="./photos/instagram.png"></a>
-        <a href="#"><img src="./photos/youtube.png"></a>
-        <a href="#"><img src="./photos/tiktok.png"></a>
-    </div> -->
+    <div class="div9">
+        <div>
+            <h1>
+                Contact
+            </h1>
+        </div>
+        <div class="contact">
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div class="socials">
+                    <a href="#"><img src="./photos/instagram.png"></a>
+                    <a href="#"><img src="./photos/youtube.png"></a>
+                    <a href="#"><img src="./photos/tiktok.png"></a>
+                </div>
+            </div>
+            <div>
+                <img src="./photos/daniel_2.JPG">
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
@@ -175,13 +216,53 @@
     const tl = gsap.timeline();
     tl.to(".title", {opacity: 0})
     tl.from(".skills", {opacity:0, yPercent: 100})
-    tl.to(".skills", {opacity:0});
+    tl.to(".skills", {opacity:0, yPercent: -50});
 
     ScrollTrigger.create({
         animation: tl, 
         trigger: ".div1", 
         start: ".div1", 
         end: "+=2500", 
+        scrub: true, 
+        pin: true, 
+        anticipatePin: 1, 
+        // markers: {
+        //     startColor: "purple", 
+        //     endColor: "fuchsia", 
+        //     fontSize: "2rem",
+        // }
+    });
+
+    const sl = gsap.timeline();
+    sl.to(".work_transition video", {scale: 2})
+    sl.from(".work_transition h1", {opacity:0})
+    sl.to(".work_transition h1", {opacity:0});
+
+    ScrollTrigger.create({
+        animation: sl, 
+        trigger: ".work_transition", 
+        start: ".work_transition", 
+        end: "+=1000", 
+        scrub: true, 
+        pin: true, 
+        anticipatePin: 1, 
+        // markers: {
+        //     startColor: "purple", 
+        //     endColor: "fuchsia", 
+        //     fontSize: "2rem",
+        // }
+    });
+
+    const vl = gsap.timeline();
+    vl.to(".about_transition video", {scale: 2})
+    vl.from(".about_transition h1", {opacity:0})
+    vl.to(".about_transition h1", {opacity:0});
+
+    ScrollTrigger.create({
+        animation: vl, 
+        trigger: ".about_transition", 
+        start: ".about_transition", 
+        end: "+=1000", 
         scrub: true, 
         pin: true, 
         anticipatePin: 1, 
