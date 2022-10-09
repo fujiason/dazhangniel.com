@@ -30,9 +30,7 @@
             <h1>Daniel Zhang</h1>
             <h2>Director and Artist</h2>
         </div>
-    </div>
-    
-    <div class="div2">
+
         <div class="skills">
             <div class="skill_content"><h1>Director</h1></div>
             <div class="skill_content"><h1>Editor</h1></div>
@@ -40,15 +38,26 @@
             <div class="skill_content"><h1>Computer Science</h1></div>
         </div>
     </div>
+    
+    <div class="div2">
+        <video autoplay muted loop class="scrub_mov">
+            <source src="./movies/Daniel Teaser Clip 18 Clash.mp4" type="video/mp4">
+        </video>
+    </div>
 
     <div class="div3">
         <div>
-            <H1>
+            <H1 class="film_title">
                 In The Heights But It's Asian
             </H1>
             <p>
-                This was a project I led in 2021 as a parody of the opening song to "In The Heights" by Lin Manuel Miranda. 
-                It has recieved critical acclaim and has been noticed by director John M. Chu.
+                “In the Heights… but it's Asian. Instead of a bodega, it's a boba shop. And it's the WHOLE opening number in a shot x shot remake… and I can't tear my eyes away.” -John M. Chu
+            </p>
+            <h1>
+                <br>Role:
+            </h1>
+            <p>
+                Director, Actor, Cinematographer, Editor
             </p>
             <center>
                 <video autoplay muted loop>
@@ -59,43 +68,50 @@
     </div>
     <div class="div4">
         <div>
-            <H1>
+            <H1 class="film_title">
                 Wuxing Warriors
             </H1>
             <p>
-                AAA's biggest end-of-the-year event is back! Fashion Show is an annual dance showcase held by UIUC's Asian American Association. 
-                We hold weekly practices where students of all dance experiences can learn a variety of popular and pan-Asian dance styles.
+                A martial arts action fantasy piece rooted in Daoist philosophy, Wuxing Warriors features a battle between five elemental warriors.
+            </p>
+            <h1>
+                <br>Role:
+            </h1>
+            <p>
+                Director, Writer, Cinematographer, Editor, VFX Artist
             </p>
             <center>
                 <video autoplay muted loop>
-                    <source src="./movies/Daniel Teaser Clip 11 Fire Hit.mp4" type="video/mp4">
+                    <source src="./movies/Daniel Teaser Clip 13 Qi Waterbending.mp4" type="video/mp4">
                 </video>
             </center>
         </div>        
     </div>
     <div class="div8">
         <div id="video-compare-container">
-            <img src="./vfx/Qi Waterbending VFX 2 Before.jpg">
+            <img src="./vfx/Edward Firebending VFX 1 Before.jpg">
             <div id="video-clipper">
-                <img src="./vfx/Qi Waterbending VFX 2 After.jpg">
+                <img src="./vfx/Edward Firebending VFX 1 After.jpg">
             </div>
         </div>
     </div>
     <div class="div5">
         <div>
-            <H1>
-                Fashion Show Trailer 2023
+            <H1 class="film_title">
+                Sokka The Firebender
             </H1>
             <p>
-                This short film first premiered as part of the UIUC AAA 36th Annual Fashion Show, a dance showcase of Asian American culture and talent. 
-                The film was played alongside live performances, hence why the film is split into parts. 
-                Together, the film and the performances tell a cohesive story. 
-                I highly recommend watching Wuxing Warriors along with the dances to get the full experience! 
-                You can find the full cut of Fashion Show on the official AAA YouTube channel: https://youtu.be/JaKZmpLrpaQ
+                The Southern Water Tribe meat-loving, boomerang-wielding inventor swordsman acquires one final skill to level the playing field: firebending.
+            </p>
+            <h1>
+                <br>Role:
+            </h1>
+            <p>
+                Director, Writer, Cinematographer, Editor, VFX Artist
             </p>
             <center>
                 <video autoplay muted loop>
-                    <source src="./movies/Daniel Teaser Clip 15 Polaroid.mp4" type="video/mp4">
+                    <source src="./movies/Daniel Teaser Clip 19 Sokka Dual Fire Blast.mp4" type="video/mp4">
                 </video>
             </center>
         </div>        
@@ -157,12 +173,14 @@
     gsap.defaults({ease: "none", duration: 2});
     
     const tl = gsap.timeline();
-    tl.from(".skills", {yPercent: 100});
+    tl.to(".title", {opacity: 0})
+    tl.from(".skills", {opacity:0, yPercent: 100})
+    tl.to(".skills", {opacity:0});
 
     ScrollTrigger.create({
         animation: tl, 
-        trigger: ".div2", 
-        start: ".div2", 
+        trigger: ".div1", 
+        start: ".div1", 
         end: "+=2500", 
         scrub: true, 
         pin: true, 
