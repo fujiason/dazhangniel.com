@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Prompt:200,300,400,500,600,700,800,900&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -18,19 +17,67 @@ html{
     from{opacity: 0;}
     to{opacity:1;}
 }
-.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .work_transition, .about_transition{
+.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .work_transition, .about_transition, .link_transition{
     height: 100vh;
 }
+.div10{
+    background-color: #111111;
+    height: 45vh;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+    background-attachment: cover;
+    text-align: left;
+    width: 100%;
+    padding: 40px 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+.div10 a{
+    position: relative;
+    max-width: 300px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.div10 a h2{
+    color: white;
+    font-size: 1.3rem;
+}
+.div10 ul{
+    position: relative;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+}
+.div10 ul li{
+    list-style: none;
+}
+.div10 ul li a{
+    display: inline-block;
+    color: #999999;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
 .div1{
     justify-content: center;
     overflow: hidden;
 }
 .div1 video{
-    position: relative;
     z-index: 0;
-    max-height: 100vh;
+    height: 100vh;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .skills{
+    opacity: 0;
     top: 0%;
     margin-top: 125px;
     position: absolute;
@@ -42,22 +89,24 @@ html{
 .skill_content h1{
     color: white;
     font-weight: 400;
-    font-size: 6rem;
+    font-size: 4.6rem;
     text-decoration: none;
+    margin-top: 25px;
 }
-.work_transition, .about_transition{
+.work_transition, .about_transition, .link_transition{
     display: flex;
     justify-content: center;
     overflow: hidden;
 }
-.work_transition video, .about_transition video{
+.work_transition video, .about_transition video, .link_transition video{
     margin: auto;
     display: block;
     position: relative;
     z-index: 0;
     max-height: 50vh;
 }
-.work_transition h1, .about_transition h1{
+.work_transition h1, .about_transition h1, .link_transition h1{
+    opacity: 0;
     position: absolute;
     top: 30%;
     left: 0;
@@ -78,63 +127,56 @@ html{
     background-attachment: cover;
     text-align: left;
 }
-.div3 div h1{
+.div11{
+    height: 30vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    background-color: black;
+    background-size: cover;
+    background-attachment: cover;
+    text-align: left;
+}
+.div11 div{
+    transform: translateY(70%);
+}
+.div11 div h1{
     color: white;
-    
+    font-size: 1.8rem;
+    transform: translateX(-51%);
 }
-.film_title{
-    margin-top: 70px;
-}
-.div3 div p{
+.div11 div p{
     color: #CCCCCC;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
-    max-width: 40em;
-    margin-top: 10px;
+    transform: translateX(-51%);
 }
-.div3 div video{
-    transform: translateX(-50%);
+.div3 div, .div4 div, .div5 div, .div11 div{
+    max-width: 750px;
+}
+.div3 div h1, .div4 div h1, .div5 div h1{
+    color: white;
+    font-size: 1.8rem;
+    transform: translateX(-17%);
+}
+.div3 div p, .div4 div p, .div5 div p{
+    color: #CCCCCC;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transform: translateX(-17%);
+}
+.div3 video, .div4 video, .div5 video{
     z-index: 0;
-    max-height: 65vh;
+    height: auto;
     margin-top: 40px;
     position: absolute;
-}
-.div4 div h1{
-    color: white;
-}
-.div4 div p{
-    font-size: 1.5rem;
-    color: #CCCCCC;
-    font-weight: 500;
-    max-width: 40em;
-    margin-top: 10px;
-}
-.div4 div video{
+    text-align: center;
+    max-width: 1000px;
+    left: 50%;
     transform: translateX(-50%);
-    z-index: 0;
-    max-height: 65vh;
-    margin-top: 40px;
-    position: absolute;
-}
-.div5 div h1{
-    color: white;
-}
-.div5 div p{
-    font-size: 1.5rem;
-    color: #CCCCCC;
-    font-weight: 500;
-    max-width: 40em;
-    margin-top: 10px;
-}
-.div5 div video{
-    transform: translateX(-50%);
-    z-index: 0;
-    max-height: 89vh;
-    margin-top: 40px;
-    position: absolute;
 }
 .div6, .div7{
-    overflow: hidden;
     padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
@@ -167,22 +209,28 @@ html{
     flex-direction: row;
     display: grid;
 }
-.div9 div h1{
-    padding-bottom: 60px;
+.contact div h1{
+    text-align: left;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
     font-size: 4rem;
     font-weight: 500;
     max-width: 30em;
     color: #CCCCCC;
 }
+.div7 div img{
+    object-position: 33% 0%;
+}
 .div6 div img, .div7 div img{
     object-fit: cover;
     width: 500px;
-    height: 500px;
+    height: 600px;
 }
 .contact div img{
     object-fit: cover;
     width: 500px;
-    height: 500px;
+    height: 650px;
 }
 .div6 div p, .div7 div p, .contact div p{
     text-align: left;
@@ -197,12 +245,11 @@ html{
     display: flex;
 }
 .socials a img{
-    padding-left: 70px;
+    padding-left: 30px;
     padding-right: 70px;
-    padding-top: 20px;
     align-items: center;
     filter: invert(1);
-    max-height: 90px;
+    max-height: 70px;
     width: auto;
 }
 .socials a img:hover{
@@ -219,11 +266,6 @@ html{
 }
 .title h1{
     font-size: 10em;
-    font-weight: 500;
-    color: white;
-}
-.title h2{
-    font-size: 3em;
     font-weight: 500;
     color: white;
 }
@@ -247,6 +289,7 @@ html{
     text-decoration: none;
 }
 .name h2{
+    font-size: 1.3rem;
     color: white;
 }
 .sticky ul{
@@ -259,9 +302,82 @@ html{
 .sticky ul li a{
     display: inline-block;
     color: white;
+    font-size: 1rem;
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
+}
+.more_vid{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.more_vid video{
+    margin: auto;
+    display: block;
+    position: relative;
+    z-index: 0;
+    max-height: 100vh;
+    left: 50%;
+    overflow: hidden;
+    transform: translateX(-50%) scale(1.5);
+}
+.watch_more h1{
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    font-size: 10em;
+    font-weight: 500;
+    color: white;
+}
+.watch_more{
+    position: flex;
+    padding-top: 200px;
+}
+.watch_more h2{
+    padding-top: 250px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+.watch_more h2 a{
+    padding: 5px 15px;
+    border: 3px solid white;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+}
+.watch_more h2 a:hover{
+    background: rgba(255, 255, 255, 0.15);
+    opacity: 1;
+    transition: 0.4s;
+}
+.reels h2{
+    font-size: 1.4em;
+    font-weight: 400;
+}
+.reels h2 a{
+    padding: 5px 15px;
+    border: 3px solid white;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+}
+.reels h2 a:hover{
+    background: rgba(255, 255, 255, 0.15);
+    opacity: 1;
+    transition: 0.4s;
 }
 .sticky ul li a:hover{
     transition: 0.3s;
@@ -298,7 +414,7 @@ html{
 }
 .contentText h2{
   max-width: 600px;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 1.4em;
   font-weight: 500;
 }
@@ -345,7 +461,7 @@ html{
     text-decoration: none;
     opacity: 0;
 }
-.filmImages a img{
+.filmImages a img, .filmImages input{
     max-width: 400px;
 }
 .filmImages:hover .filmName{
@@ -366,31 +482,42 @@ html{
     background-attachment: fixed;
     background-position: 100% 20%;
 }
-#video-compare-container {
+#video-compare-container{
     margin-top: 70px;
     align-items: center;
     display: inline-block;
     line-height: 0;
     position: relative;
-    width: 89%;
-    height: 89%;
+    width: 75%;
+    height: 42%;
     padding-top: 42.3%;
     z-index: 0;
 }
-#video-compare-container > img {
+#video-compare-container1 {
+    margin-top: 70px;
+    align-items: center;
+    display: inline-block;
+    line-height: 0;
+    position: relative;
+    width: 90%;
+    height: 22%;
+    padding-top: 42.3%;
+    z-index: 0;
+}
+#video-compare-container > img, #video-compare-container1 > img {
     width: 100%;
     position: absolute;
     top: 0; 
     height: 100%;
 }
-#video-clipper {
+#video-clipper, #video-clipper1 {
     width: 50%; 
     position: absolute;
     top: 0; 
     bottom: 0;
     overflow: hidden;
 }
-#video-clipper img {
+#video-clipper img, #video-clipper1 img {
     width: 200%;
     position: absolute;
     height: 100%;
@@ -402,3 +529,74 @@ html{
     margin-top: 100px;
     width: 89%;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
+.modal-content {
+    -webkit-animation: fadein 1s;
+    background-color: black;
+    margin: 0;
+
+    background-color: #202020;
+    margin: 0% auto;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+.modal_inline{
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.modal_inline div{
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+}
+.modal-content h2{
+    padding-bottom: 50px;
+    font-size: 3em;
+    font-weight: 500;
+    color: white;
+    border-left: 20px;
+  }
+.modal_inline div h3{
+    padding-left: 40px;
+    font-size: 1.4em;
+    width: 560px;
+    font-weight: 300;
+    color: #CCCCCC;
+    text-align: left;
+    border-left: 20px;
+}
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transform: scale(1.5);
+    margin-right: 10px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #CCCCCC;
+    text-decoration: none;
+    cursor: pointer;
+  }

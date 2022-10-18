@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="./photos/icon.JPEG"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Danielfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dazhangniel</title>
 </head>
+
 <body>
     <div class="sticky">
         <div class="home">
-          <div>
-            <a href="index.html" class="name"><h2>Daniel Zhang</h2></a>
-          </div>
+            <div>
+                <a href="index.html" class="name">
+                    <h2>Daniel Zhang</h2>
+                </a>
+            </div>
         </div>
-          <ul>
-            <li><a href="film.html">Film</a></li>
+        <ul>
+            <li><a href="film.html">Film and Videography</a></li>
+            <li><a href="#about_transition">About</a></li>
             <li><a href="#div9">Contact</a></li>
-            <li><a href="#">Source</a></li>
+            <li><a href="https://www.linkedin.com/in/daniel-zhang-4bb803213/">LinkedIn</a></li>
+            <li><a href="https://github.com/fujiason/fujiason.github.io">GitHub</a></li>
         </ul>
     </div>
     <div class="div1">
@@ -26,70 +34,171 @@
         </video>
         <div class="title">
             <h1>Daniel Zhang</h1>
-            <h2>Director and Artist</h2>
+            <div class="reels">
+                <h2>
+                    <a href="https://youtu.be/2rFAjNjrI-Y"><i class="fa fa-youtube-play" aria-hidden="true"></i> Highlight Reel Fall 2022</a>
+                </h2>
+            </div>
         </div>
         <div class="skills">
-            <div class="skill_content"><h1>Director</h1></div>
-            <div class="skill_content"><h1>Editor</h1></div>
-            <div class="skill_content"><h1>Photography</h1></div>
-            <div class="skill_content"><h1>Computer Science</h1></div>
+            <div class="skill_content">
+                <h1>Director</h1>
+            </div>
+            <div class="skill_content">
+                <h1>Filmmaker</h1>
+            </div>
+            <div class="skill_content">
+                <h1>Editor</h1>
+            </div>
+            <div class="skill_content">
+                <h1>Programmer</h1>
+            </div>
+            <div class="skill_content">
+                <h1>VFX Artist</h1>
+            </div>
         </div>
     </div>
-    
-    <div class="work_transition">
+    <div class="transition_mask_skills"
+        style="background: linear-gradient(0deg, black, black 15%, transparent); height: 5vh;"></div>
+
+    <div class="about_transition" id="about_transition">
+        <video autoplay muted loop>
+            <source src="./movies/Daniel Teaser Clip 18 Clash.mp4" type="video/mp4">
+        </video>
+        <h1>About</h1>
+    </div>
+    <div class="transition_mask_about"
+        style="background: linear-gradient(0deg, black, black 15%, transparent); height: 30vh;"></div>
+
+    <div class="div6" id="about_daniel">
+        <div>
+            <p>
+                Daniel Zhang is a videographer and emerging filmmaker based in Chicago, Illinois. For the last eight
+                years, he has been perfecting his creative style through independent short films and digital media.
+                Daniel has lent his unique style and technical ability to produce and edit high quality dance videos,
+                promotional videos, wedding videos, commercials, infomercials, music videos, and more.<br><br>
+                Aside from client work, Daniel has officially worked with Hinsdale Central High School, University of Illinois Hospital, 
+                Premom Inc., Living Water Evangelical Church, TEDx, Team Avatar Films, and more.
+            </p>
+        </div>
+        <div>
+            <img src="./photos/daniel_3.JPEG">
+        </div>
+    </div>
+    <div class="div7" id="about_wuxing">
+        <div>
+            <img src="./photos/Wuxing Warriors BTS.JPG">
+        </div>
+        <div>
+            <p>
+                While studying Computer Science + Advertising at the University of Illinois at Urbana-Champaign, Daniel
+                utilized his acquired knowledge of computer graphics to enhance his own filmmaking craft through complex
+                visual effects. His education in advertising has also given him an edge in social media marketing and
+                brand positioning. These skills have assisted Daniel in gaining over 500,000 views on YouTube and
+                150,000 likes on Tiktok.
+            </p>
+        </div>
+    </div>
+    <div class="div6" id="about_WDTAB">
+        <div>
+            <p>
+                Daniel's passion for filmmaking is rooted in his identity as a Chinese-American. In his independent
+                work, Daniel has developed a unique style of filmmaking inspired by anime, Hong-Kong action films, and
+                Bollywood. His recent stories have delved into themes inspired by Eastern philosophy. Furthermore,
+                Daniel's leadership as Videography Director at UIUC's Asian American Association has resulted
+                in a platform in which filmmakers and cultural organizations can have the production means to create and
+                promote AAPI stories.
+
+            </p>
+        </div>
+        <div>
+            <img src="./photos/WDTAB Dinner Table.jpg">
+        </div>
+    </div>
+
+    <div class="work_transition" id="work_transition">
         <video autoplay muted loop>
             <source src="./movies/Daniel Teaser Clip 14 Cultural Coords.mp4" type="video/mp4">
         </video>
         <h1>Films</h1>
     </div>
+    <div class="transition_mask_work"
+        style="background: linear-gradient(0deg, black, black 15%, transparent); height: 30vh;"></div>
     <!-- <div class="div2">
         <video id="v0" tabindex="0", autobuffer preload muted class="scrub_mov">
             <source src="./movies/Daniel Teaser Clip 18 Clash.mp4" type="video/mp4">
         </video>
     </div> -->
 
-    <div class="div3">
+    <div class="div3" id="heights">
         <div>
-            <H1 class="film_title">
+            <h1 class="film_title">
                 In The Heights But It's Asian
-            </H1>
-            <p>
-                “In the Heights… but it's Asian. Instead of a bodega, it's a boba shop. And it's the WHOLE opening number in a shot x shot remake… and I can't tear my eyes away.” -John M. Chu
-            </p>
-            <h1>
-                <br>Role:
             </h1>
             <p>
-                Director, Actor, Cinematographer, Editor
+                “In the Heights… but it's Asian. Instead of a bodega,
+                it's a boba shop. And it's the WHOLE opening number
+                in a shot x shot remake… and I can't tear my eyes away.”
+                -John M. Chu
+                <br>
+                <br>
+                Role: Director, Actor, Cinematographer, Editor
             </p>
-            <center>
-                <video autoplay muted loop>
-                    <source src="./movies/Daniel Teaser Clip 1 In The Heights Opening.mp4" type="video/mp4">
-                </video>
-            </center>
+            <video autoplay muted loop>
+                <source src="./movies/Daniel Teaser Clip 1 In The Heights Opening.mp4" type="video/mp4">
+            </video>
         </div>
     </div>
-    <div class="div4">
+    <div style="height: 15vh"></div>
+    <div class="div4" id="wuxing">
         <div>
-            <H1 class="film_title">
+            <h1 class="film_title">
                 Wuxing Warriors
-            </H1>
-            <p>
-                A martial arts action fantasy piece rooted in Daoist philosophy, Wuxing Warriors features a battle between five elemental warriors.
-            </p>
-            <h1>
-                <br>Role:
             </h1>
             <p>
-                Director, Writer, Cinematographer, Editor, VFX Artist
+                A martial arts action fantasy piece rooted in Daoist
+                philosophy, Wuxing Warriors features a battle between
+                five elemental warriors.
+                <br>
+                <br>
+                Role: Director, Writer, Cinematographer, Editor, VFX Artist
             </p>
-            <center>
-                <video autoplay muted loop>
-                    <source src="./movies/Daniel Teaser Clip 13 Qi Waterbending.mp4" type="video/mp4">
-                </video>
-            </center>
-        </div>        
+            <video autoplay muted loop>
+                <source src="./movies/Daniel Teaser Clip 13 Qi Waterbending.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
+    <div style="height: 10vh"></div>
+    <div class="div5" id="sokka">
+        <div>
+            <h1 class="film_title">
+                Sokka The Firebender
+            </h1>
+            <p>
+                The Southern Water Tribe meat-loving, boomerang-wielding
+                inventor swordsman acquires one final skill to level the
+                playing field: firebending.
+                <br>
+                <br>
+                Role: Director, Writer, Cinematographer, Editor, VFX Artist
+            </p>
+            <video autoplay muted loop>
+                <source src="./movies/Daniel Teaser Clip 19 Sokka Dual Fire Blast.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="div11">
+        <div>
+        <h1 class="film_title">
+            Visual Effects
+        </h1>
+        <p>
+            Hover to watch the before and after breakdown!
+        </p>
+        </div>
+    </div>
+
     <div class="div8">
         <div id="video-compare-container">
             <img src="./vfx/Edward Firebending VFX 1 Before.jpg">
@@ -99,82 +208,49 @@
         </div>
     </div>
 
-    <div style="
-    display: flex;
-    position: relative;
-    justify-content: center;
-    overflow: hidden;
-    background-color: black;
-    background-size: cover;
-    background-attachment: cover;
-    text-align: center;">
-        <p style="color: #CCCCCC">
-            Before and After (Hover)
-        </p>
-    </div>
-
-    <div class="div5">
-        <div>
-            <H1 class="film_title">
-                Sokka The Firebender
-            </H1>
-            <p>
-                The Southern Water Tribe meat-loving, boomerang-wielding inventor swordsman acquires one final skill to level the playing field: firebending.
-            </p>
-            <h1>
-                <br>Role:
-            </h1>
-            <p>
-                Director, Writer, Cinematographer, Editor, VFX Artist
-            </p>
-            <center>
-                <video autoplay muted loop>
-                    <source src="./movies/Daniel Teaser Clip 19 Sokka Dual Fire Blast.mp4" type="video/mp4">
-                </video>
-            </center>
-        </div>        
-    </div>
-
-    <div class="about_transition">
-        <video autoplay muted loop>
-            <source src="./movies/Daniel Teaser Clip 2 12 AM Phone Shot.mp4" type="video/mp4">
-        </video>
-        <h1>About</h1>
-    </div>
-
-    <div class="div6">
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-            <div>
-                <img src="./photos/STFB BTS.PNG">
+    <div class="div8">
+        <div id="video-compare-container1">
+            <img src="./vfx/Jeremy Lightning VFX 3 Before.jpg">
+            <div id="video-clipper1">
+                <img src="./vfx/Jeremy Lightning VFX 3 After.jpg">
             </div>
         </div>
-    <div class="div7">
-            <div>
-                <img src="./photos/FS Trailer BTS.JPG">
-            </div>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
     </div>
+
+    <div style="height: 10vh"></div>
+    <div class="more_vid">
+        <video autoplay muted loop>
+            <source src="./movies/Daniel Teaser Clip 15 Polaroid.mp4" type="video/mp4">
+        </video>
+        <div class="watch_more">
+            <h1>Watch More</h1>
+                <h2>
+                    <a href="film.html"><i class="fa fa-video-camera" aria-hidden="true"></i> Films and Videography</a>
+                </h2>
+        </div>
+    </div>
+
+    <div class="link_transition">
+        <video autoplay muted loop>
+            <source src="./movies/Daniel Teaser Clip 20 Cloth.mp4" type="video/mp4">
+        </video>
+        <h1>Connect</h1>
+    </div>
+    <div class="transition_mask_link"
+        style="background: linear-gradient(0deg, black, black 15%, transparent); height: 30vh;"></div>
 
     <div class="div9" id="div9">
-        <div>
-            <h1>
-                Contact
-            </h1>
-        </div>
         <div class="contact">
             <div>
+                <h1>
+                    Contact
+                </h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    For questions or bookings, please email danielsimonzhang@gmail.com or text<br> 630-632-8616 with
+                    your name and event/shoot details. Otherwise, follow Daniel's work on YouTube, Instagram, Tiktok,
+                    and LinkedIn!
                 </p>
-                <div class="socials">
+                <div class="socials" style="padding-top: 100px;">
                     <a href="https://www.instagram.com/zhang_films/"><img src="./photos/instagram.png"></a>
                     <a href="https://www.youtube.com/c/DanielZhangyeet"><img src="./photos/youtube.png"></a>
                     <a href="https://www.tiktok.com/@sokkathefirebender"><img src="./photos/tiktok.png"></a>
@@ -186,105 +262,147 @@
         </div>
     </div>
 
+    <br>
+    <br>
+    <div class="div10">
+        <a href="index.html">
+            <h2>Daniel Zhang</h2>
+        </a>
+        <ul>
+            <li><a href="film.html">Film</a></li>
+            <li><a href="#div9">Contact</a></li>
+            <li><a href="https://www.linkedin.com/in/daniel-zhang-4bb803213/">LinkedIn</a></li>
+            <li><a href="https://github.com/fujiason/fujiason.github.io">GitHub</a></li>
+        </ul>
+        <a href="#about_transition">
+            <h2>About</h2>
+        </a>
+        <ul>
+            <li><a href="#about_daniel">Info</a></li>
+            <li><a href="#about_wuxing">Education</a></li>
+            <li><a href="#about_WDTAB">Background</a></li>
+        </ul>
+        <a href="#work_transition">
+            <h2>Films</h2>
+        </a>
+        <ul>
+            <li><a href="#heights">In The Heights</a></li>
+            <li><a href="#wuxing">Wuxing Warriors</a></li>
+            <li><a href="#sokka">Sokka The Firebender</a></li>
+        </ul>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
     <scripe src="main.js"></scripe>
     <script>
-    gsap.registerPlugin(ScrollTrigger);
+        gsap.registerPlugin(ScrollTrigger);
 
-    // gsap.to(".div1", {
-    //     duration: 8, 
-    //     scrollTrigger: {
-    //         trigger: ".div1", 
-    //         start: "top top", 
-    //         end: "-=1000", 
-    //         scrub: 4, 
-    //         pin: ".div2",
-    //         toggleActions: "restart none none none", 
-    //         markers: {
-    //             startColor: "purple", 
-    //             endColor: "fuchsia", 
-    //             fontSize: "2rem",
-    //         },
-    //     } 
-    // });
+        gsap.defaults({ ease: "none", duration: 2 });
+        gsap.set(".skills", { opacity: 1 });
+        const tl = gsap.timeline();
+        tl.to(".title", { opacity: 0 })
+        tl.from(".skills", { opacity: 0, yPercent: 100 })
+        tl.to(".skills", { yPercent: -100})
+        tl.to(".transition_mask_skills", { yPercent: -90, duration: 0.2 });
 
-    gsap.defaults({ease: "none", duration: 2});
-    
-    const tl = gsap.timeline();
-    tl.to(".title", {opacity: 0})
-    tl.from(".skills", {opacity:0, yPercent: 100})
-    tl.to(".skills", {opacity:0, yPercent: -50});
+        ScrollTrigger.create({
+            animation: tl,
+            trigger: ".div1",
+            start: ".div1",
+            end: "+=2500",
+            scrub: true,
+            pin: true,
+            anticipatePin: 1,
+            // markers: {
+            //     startColor: "purple", 
+            //     endColor: "fuchsia", 
+            //     fontSize: "2rem",
+            // }
+        });
 
-    ScrollTrigger.create({
-        animation: tl, 
-        trigger: ".div1", 
-        start: ".div1", 
-        end: "+=2500", 
-        scrub: true, 
-        pin: true, 
-        anticipatePin: 1, 
-        // markers: {
-        //     startColor: "purple", 
-        //     endColor: "fuchsia", 
-        //     fontSize: "2rem",
-        // }
-    });
+        const vl = gsap.timeline();
+        gsap.set(".about_transition h1", { opacity: 1 });
+        vl.to(".about_transition video", { scale: 2 })
+        vl.from(".about_transition h1", { opacity: 0 })
+        vl.to(".transition_mask_about", { yPercent: -90 });
 
-    const sl = gsap.timeline();
-    sl.to(".work_transition video", {scale: 2})
-    sl.from(".work_transition h1", {opacity:0});
+        ScrollTrigger.create({
+            animation: vl,
+            trigger: ".about_transition",
+            start: ".about_transition",
+            end: "+=1000",
+            scrub: true,
+            pin: true,
+            anticipatePin: 1,
+        });
 
-    ScrollTrigger.create({
-        animation: sl, 
-        trigger: ".work_transition", 
-        start: ".work_transition", 
-        end: "+=1000", 
-        scrub: true, 
-        pin: true, 
-        anticipatePin: 1, 
-        // markers: {
-        //     startColor: "purple", 
-        //     endColor: "fuchsia", 
-        //     fontSize: "2rem",
-        // }
-    });
 
-    const vl = gsap.timeline();
-    vl.to(".about_transition video", {scale: 2})
-    vl.from(".about_transition h1", {opacity:0});
+        const sl = gsap.timeline();
+        gsap.set(".work_transition h1", { opacity: 1 });
+        sl.to(".work_transition video", { scale: 2 })
+        sl.from(".work_transition h1", { opacity: 0 })
+        sl.to(".transition_mask_work", { yPercent: -90 });
 
-    ScrollTrigger.create({
-        animation: vl, 
-        trigger: ".about_transition", 
-        start: ".about_transition", 
-        end: "+=1000", 
-        scrub: true, 
-        pin: true, 
-        anticipatePin: 1, 
-        // markers: {
-        //     startColor: "purple", 
-        //     endColor: "fuchsia", 
-        //     fontSize: "2rem",
-        // }
-    });
+        ScrollTrigger.create({
+            animation: sl,
+            trigger: ".work_transition",
+            start: ".work_transition",
+            end: "+=1000",
+            scrub: true,
+            pin: true,
+            anticipatePin: 1,
+        });
 
-    function trackLocation(e) {
-        var rect = videoContainer.getBoundingClientRect(),
-            position = ((e.pageX - rect.left) / videoContainer.offsetWidth)*100;
-        if (position <= 100) { 
-            videoClipper.style.width = position+"%";
-            clippedVideo.style.width = ((100/position)*100)+"%";
-            clippedVideo.style.zIndex = 3;
-	    }
-    }
-    var videoContainer = document.getElementById("video-compare-container"),
-    videoClipper = document.getElementById("video-clipper"),
-    clippedVideo = videoClipper.getElementsByTagName("img")[0];
-    videoContainer.addEventListener( "mousemove", trackLocation, false); 
-    videoContainer.addEventListener("touchstart",trackLocation,false);
-    videoContainer.addEventListener("touchmove",trackLocation,false);
+        const rl = gsap.timeline();
+        gsap.set(".link_transition h1", { opacity: 1 });
+        rl.to(".link_transition video", { scale: 2 })
+        rl.from(".link_transition h1", { opacity: 0 })
+        rl.to(".transition_mask_link", { yPercent: -90 });
+
+        ScrollTrigger.create({
+            animation: rl,
+            trigger: ".link_transition",
+            start: ".link_transition",
+            end: "+=1000",
+            scrub: true,
+            pin: true,
+            anticipatePin: 1,
+        });
+
+        function trackLocation(e) {
+            var rect = videoContainer.getBoundingClientRect(),
+                position = ((e.pageX - rect.left) / videoContainer.offsetWidth) * 100;
+            if (position <= 100) {
+                videoClipper.style.width = position + "%";
+                clippedVideo.style.width = ((100 / position) * 100) + "%";
+                clippedVideo.style.zIndex = 3;
+            }
+        }
+        var videoContainer = document.getElementById("video-compare-container"),
+            videoClipper = document.getElementById("video-clipper"),
+            clippedVideo = videoClipper.getElementsByTagName("img")[0];
+        videoContainer.addEventListener("mousemove", trackLocation, false);
+        videoContainer.addEventListener("touchstart", trackLocation, false);
+        videoContainer.addEventListener("touchmove", trackLocation, false);
+
+        function trackLocation1(e) {
+            var rect1 = videoContainer1.getBoundingClientRect(),
+                position1 = ((e.pageX - rect1.left) / videoContainer1.offsetWidth) * 100;
+            if (position1 <= 100) {
+                videoClipper1.style.width = position1 + "%";
+                clippedVideo1.style.width = ((100 / position1) * 100) + "%";
+                clippedVideo1.style.zIndex = 3;
+            }
+        }
+        var videoContainer1 = document.getElementById("video-compare-container1"),
+            videoClipper1 = document.getElementById("video-clipper1"),
+            clippedVideo1 = videoClipper1.getElementsByTagName("img")[0];
+        videoContainer1.addEventListener("mousemove", trackLocation1, false);
+        videoContainer1.addEventListener("touchstart", trackLocation1, false);
+        videoContainer1.addEventListener("touchmove", trackLocation1, false);
 
     </script>
 </body>
+
 </html>
