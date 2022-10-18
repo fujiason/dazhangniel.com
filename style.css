@@ -482,7 +482,7 @@ html{
     background-attachment: fixed;
     background-position: 100% 20%;
 }
-#video-compare-container{
+#video-compare-container, #video-compare-container2{
     margin-top: 70px;
     align-items: center;
     display: inline-block;
@@ -504,20 +504,20 @@ html{
     padding-top: 42.3%;
     z-index: 0;
 }
-#video-compare-container > img, #video-compare-container1 > img {
+#video-compare-container > img, #video-compare-container1 > img, #video-compare-container2 > video {
     width: 100%;
     position: absolute;
     top: 0; 
     height: 100%;
 }
-#video-clipper, #video-clipper1 {
+#video-clipper, #video-clipper1 , #video-clipper2{
     width: 50%; 
     position: absolute;
     top: 0; 
     bottom: 0;
     overflow: hidden;
 }
-#video-clipper img, #video-clipper1 img {
+#video-clipper img, #video-clipper1 img , #video-clipper2 video{
     width: 200%;
     position: absolute;
     height: 100%;
